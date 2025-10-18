@@ -1,0 +1,30 @@
+name: Greetings
+
+on:
+  pull_request:
+    types:
+      - opened
+  issues:
+    types:
+      - opened
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  greeting:
+    name: Greet First-Time Contributors
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/first-interaction@v3
+        with:
+          issue-message: |
+            # Issue Message with Markdown
+
+            Thanks for posting your first issue! Your contribution furthers the development of our project!
+          pr-message: |
+            # PR Message with Markdown
+
+            Thanks for making your first pull request! Your contribution furthers the development of our project!

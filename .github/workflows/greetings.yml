@@ -20,11 +20,5 @@ jobs:
     steps:
       - uses: actions/first-interaction@v3
         with:
-          issue-message: |
-            # Issue Message with Markdown
-
-            Thanks for posting your first issue! Your contribution furthers the development of our project!
-          pr-message: |
-            # PR Message with Markdown
-
-            Thanks for making your first pull request! Your contribution furthers the development of our project!
+          issue-message: Thanks for posting your first issue! Your contribution furthers the development of our project!
+          pr-message: Thanks for making your first pull request! Your contribution furthers the development of our project!
